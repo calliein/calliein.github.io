@@ -163,19 +163,6 @@ strong {
     background: black;
 }
 
-#preloader {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    background: black url("images/preload-oval.svg") no-repeat center;
-    z-index: 9999;
-}
-
 .modal {
     position: fixed;
     top: 0;

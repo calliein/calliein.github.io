@@ -10,7 +10,7 @@ function createNewTabIcon() {
 function appendNewTabIconToLink(linkElement) {
     if (linkElement.target === "_blank") {
         const newTabIcon = createNewTabIcon();
-        linkElement.appendChild(newTabIcon);
+        linkElement.appendChild(` ${newTabIcon}`);
     }
 }
 
@@ -66,9 +66,3 @@ document.addEventListener("keyup", e => {
         document.querySelector(".modal.is-visible").classList.remove(isVisible);
     }
 });
-
-// Preloader spinner
-document.onload = function(){
-    var preloader = document.getElementById("preloader");
-    preloader.style.display = "none";
-  };
