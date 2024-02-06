@@ -68,7 +68,7 @@ document.addEventListener("keyup", e => {
 });
 
 // Preloader spinner
-window.onload = function(){
+document.onload = function(){
     var preloader = document.getElementById("preloader");
     preloader.style.display = "none";
   };
