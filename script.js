@@ -10,7 +10,9 @@ function createNewTabIcon() {
 function appendNewTabIconToLink(linkElement) {
     if (linkElement.target === "_blank") {
         const newTabIcon = createNewTabIcon();
-        linkElement.appendChild(` ${newTabIcon}`);
+        const space = document.createTextNode(" ");
+        linkElement.appendChild(space);
+        linkElement.appendChild(newTabIcon);
     }
 }
 
