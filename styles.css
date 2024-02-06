@@ -217,6 +217,11 @@ strong {
     height: auto;
 }
 
+.fa-arrow-up-right-from-square {
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
 @media only screen and (max-width: 800px) {
     #flex {
         flex-wrap: wrap;
