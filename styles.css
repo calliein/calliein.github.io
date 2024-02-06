@@ -1,11 +1,12 @@
 body {
-    font-family: Gotham, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: black;
     background-size: 65px;
     color: black;
     background-image: none;
     scrollbar-color: black white;
+    line-height: 1.2em;
 }
 
 * {
