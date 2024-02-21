@@ -1,4 +1,4 @@
-// Function to create the new tab icon
+// Function to create the "new tab" icon
 function createNewTabIcon() {
     const newTabIcon = document.createElement("i");
     newTabIcon.className = "fa-solid fa-arrow-up-right-from-square fa-xs";
@@ -6,7 +6,7 @@ function createNewTabIcon() {
     return newTabIcon;
 }
 
-// Function to append the new tab icon to a given link
+// Function to append the "new tab" icon to a given link
 function appendNewTabIconToLink(linkElement) {
     if (linkElement.target === "_blank") {
         const newTabIcon = createNewTabIcon();
@@ -14,7 +14,7 @@ function appendNewTabIconToLink(linkElement) {
     }
 }
 
-// Find all links and append the new tab icon to them
+// Find all links and append the "new tab" icon to them
 const links = document.getElementsByTagName("a");
 for (let i = 0; i < links.length; i++) {
     appendNewTabIconToLink(links[i]);
