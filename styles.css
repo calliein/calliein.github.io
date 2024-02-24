@@ -7,7 +7,7 @@ body {
     background-image: none;
     scrollbar-color: black white;
     line-height: 1.5em;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 * {
@@ -15,7 +15,7 @@ body {
 }
 
 #container {
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -223,7 +223,11 @@ strong {
 
 @media only screen and (max-width: 800px) {
     body {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    #container {
+    max-width: 100%;
     }
 
     #flex {
@@ -258,7 +262,7 @@ strong {
 
     .tab button {
         font-weight: 800;
-        font-size: 1em;
+        font-size: 16px;
     }
 
 }
