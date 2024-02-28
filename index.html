@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>callie ingram</title>
     <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link href="/font/css/fontawesome.min.css" rel="stylesheet">
-    <link href="/font/css/brands.min.css" rel="stylesheet">
-    <link href="/font/css/solid.min.css" rel="stylesheet">
+    <link rel="preload" href="/font/css/fontawesome.min.css" as="style">
+    <link rel="preload" href="/font/css/brands.min.css" as="style">
+    <link rel="preload" href="/font/css/solid.min.css" as="style">
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="/font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/font/css/brands.min.css">
+    <link rel="stylesheet" href="/font/css/solid.min.css">
     <link rel="stylesheet" href="/styles.css">
 </head>
 
@@ -19,18 +23,18 @@
             <!-- Sidebar nav -->
             <aside id="leftSidebar">
                 <div class="tab" role="navigation" aria-label="main">
-                    <button class="tablinks" onclick="openPage(event, 'About')" id="defaultOpen">About</button>
-                    <button class="tablinks" onclick="openPage(event, 'Writing-and-Research')">Writing & Research</button>
-                    <button class="tablinks" onclick="openPage(event, 'Teaching')">Teaching</button>
-                    <button class="tablinks" onclick="openPage(event, 'Editing-and-Web')">Editing & Web Design</button>
-                    <button class="tablinks" onclick="openPage(event, 'Contact')">Contact</button>
+                    <button class="tablinks" onclick="openPage(event, 'about')" id="defaultOpen">About</button>
+                    <button class="tablinks" onclick="openPage(event, 'writing-and-research')">Writing <br />& Research</button>
+                    <button class="tablinks" onclick="openPage(event, 'teaching')">Teaching</button>
+                    <button class="tablinks" onclick="openPage(event, 'editing-and-web')">Editing <br />& Web Design</button>
+                    <button class="tablinks" onclick="openPage(event, 'contact')">Contact</button>
                 </div>
             </aside>
 
             <main>
 
                 <!-- About tab -->
-                <div id="About" class="tabcontent">
+                <div id="about" class="tabcontent">
                     <h1>Callie Ingram</h1>
                     <p>Callie Ingram is an English PhD Candidate at the University at Buffalo, with research interests
                         in twentieth and twenty-first century American literature, contemporary fiction, experimental
@@ -44,11 +48,11 @@
                 </div>
 
                 <!-- Writing & Research tab -->
-                <div id="Writing-and-Research" class="tabcontent">
+                <div id="writing-and-research" class="tabcontent">
                     <h2>Publications</h2>
                         <h3>Scholarly</h3>
                             <ul>
-                                <li>"Sew Me Together Yrself: Hypertext and the Female Monster in <em>Frankenstein</em> and
+                                <li>"Sew Me Together Yourself: Hypertext and the Female Monster in <em>Frankenstein</em> and
                                     <em>Patchwork Girl</em>" in <a target="_blank"
                                         href="https://salempress.com/ci-frankenstein"><em>Critical Insights: Frankenstein, or the
                                             Modern Prometheus</em></a></li>
@@ -160,7 +164,7 @@
                 </div>
                 
                 <!-- Teaching tab -->
-                <div id="Teaching" class="tabcontent">
+                <div id="teaching" class="tabcontent">
                     <h2>Courses Taught</h2>
                         <h3><a target="_blank" href="https://www.buffalo.edu">University at Buffalo</a>, Graduate Instructor (of Record)</h3>
                             <ul>
@@ -189,7 +193,7 @@
                 </div>
         
                 <!-- Editing & Web tab -->
-                <div id="Editing-and-Web" class="tabcontent">
+                <div id="editing-and-web" class="tabcontent">
                     <h2>Academic Editing & Web Design</h2>
                         <ul>
                             <li>Web Designer for <a target="_blank" href="https://www.buffalo.edu/nemla.html">NeMLA</a>, 2022–24</li>
@@ -205,7 +209,7 @@
                 </div>
                 
                 <!-- Contact tab -->
-                <div id="Contact" class="tabcontent">
+                <div id="contact" class="tabcontent">
                     <h2>Contact</h2>
                     <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a target="_blank"
                             href="mailto:calliein@buffalo.edu">calliein@buffalo.edu</a></p>
