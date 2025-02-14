@@ -147,6 +147,28 @@ strong {
     padding-right: 5px;
 }
 
+.blog {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    font-size: smaller;
+}
+
+.blog h2 {
+    color: white;
+    display: inline;
+}
+
+.blog p {
+    padding: 0;
+    margin: 0;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -167,6 +189,20 @@ strong {
     margin-left: 3px;
     vertical-align: middle;
 }
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px greenyellow, -2px -2px tomato; transform: translate(-5px, 0); transform: rotate(2deg);}
+    20% { text-shadow: -2px 2px purple, 2px -2px cyan; transform: translate(-2px, 2px); transform: rotate(1deg);}
+    40% { text-shadow: 3px -3px cyan, -3px 3px greenyellow; transform: translate(2px, -2px); }
+    60% { text-shadow: -3px -3px tomato, 3px 3px fuchsia; transform: translate(-3px, 3px); }
+    80% { text-shadow: 4px 4px fuchsia, -4px -4px cyan; transform: translate(3px, -3px); transform: rotate(-1deg);}
+    100% { text-shadow: -2px 2px cyan, 2px -2px fuchsia; transform: translate(0, -2px); transform: rotate(-2deg);}
+  }
+  
+  .glitch {
+    animation: glitch 0.6s infinite alternate;
+    padding-left: 5px;
+  }
 
 @media only screen and (max-width: 800px) {
     body {
