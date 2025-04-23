@@ -1,3 +1,34 @@
+// Fetch blog data from XML & display in "About" tab
+fetch('/blog.xml')
+    .then(res => res.text())
+    .then(xmlStr => (new DOMParser()).parseFromString(xmlStr, "text/xml"))
+    .then(data => {
+        const items = Array.from(data.querySelectorAll('item')).reverse();
+        
+        const blogContainer = document.getElementById('blog-container');
+        const newsContainer = document.getElementById('news-container');
+        
+        items.forEach(item => {
+            const types = Array.from(item.querySelectorAll('type')).map(t => t.textContent.trim().toLowerCase());
+            const title = item.querySelector('title').textContent;
+            const desc = item.querySelector('description').textContent;
+            
+            const div = document.createElement('div');
+            div.classList.add('update');
+            div.innerHTML = `
+            <i class="fa-solid fa-thumbtack"></i> <h2>${title}</h2>
+            <p>${desc}</p>
+            `;
+        
+        if (types.includes('news')) {
+            newsContainer.appendChild(div.cloneNode(true));
+        }
+        if (types.includes('blog')) {
+            blogContainer.appendChild(div.cloneNode(true))
+        }
+    });
+});
+
 // Function to create the "open in new tab/window" icon
 function createNewTabIcon() {
     const newTabIcon = document.createElement("i");

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+
+<channel>
+<title>Callie Ingram - Blog</title>
+<link>https://callieingram.page</link>
+<description>Blog updates.</description>
+<language>en-us</language>
+
+<item>
+    <title>NeMLA 2025 in Philadelphia</title>
+    <link></link>
+    <description><![CDATA[
+        I'm chairing "Contemporary Cyberfeminisms," presenting on "Reading Reading," &amp; attending all the Women's &amp; Gender Studies Caucus special events. Come say hi!
+        ]]>
+    </description>
+    <pubDate>Wed, 23 April 2025 17:45:00 +0400</pubDate>
+    <type>blog</type>
+</item>
+
+<item>
+    <title>ACLA 2025</title>
+    <link></link>
+    <description><![CDATA[
+        I'm presenting on Jennifer Egan's "vision" trilogy (<cite>Look at Me</cite>, <cite>A Visit from the Goon Squad</cite>, <cite>The Candy House</cite>) for the seminar "Future Memory: Intersections of Memory, Technology, and Narrative in Literature and Film Across Time."
+        ]]>
+    </description>
+    <pubDate>Wed, 23 April 2025 17:49:00 +0400</pubDate>
+    <type>news</type>
+    <type>blog</type>
+</item>
+
+
+</rss>

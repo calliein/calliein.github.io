@@ -147,7 +147,7 @@ strong {
     padding-right: 5px;
 }
 
-.blog {
+.update {
     width: 100%;
     height: auto;
     background-color: black;
@@ -159,12 +159,12 @@ strong {
     font-size: smaller;
 }
 
-.blog h2 {
+.update h2 {
     color: white;
     display: inline;
 }
 
-.blog p {
+.update p {
     padding: 0;
     margin: 0;
 }
