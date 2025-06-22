@@ -12,11 +12,19 @@ fetch('/blog.xml')
             const types = Array.from(item.querySelectorAll('type')).map(t => t.textContent.trim().toLowerCase());
             const title = item.querySelector('title').textContent;
             const desc = item.querySelector('description').textContent;
+            const pubDate = item.querySelector('pubDate').textContent;
+            const date = new Date(pubDate);
+            const formattedDate = new Intl.DateTimeFormat('en-GB', {
+                day: '2-digit',
+                month: 'short',
+                year: 'numeric',
+            }).format(date);
             
             const div = document.createElement('div');
             div.classList.add('update');
             div.innerHTML = `
             <i class="fa-solid fa-thumbtack"></i> <h2>${title}</h2>
+            <p class="tiny">${formattedDate}</p>
             <p>${desc}</p>
             `;
         
