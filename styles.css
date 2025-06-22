@@ -169,6 +169,13 @@ strong {
     margin: 0;
 }
 
+.update a,
+.update a:hover,
+.update a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -191,18 +198,45 @@ strong {
 }
 
 @keyframes glitch {
-    0% { text-shadow: 2px 2px greenyellow, -2px -2px tomato; transform: translate(-5px, 0); transform: rotate(2deg);}
-    20% { text-shadow: -2px 2px purple, 2px -2px cyan; transform: translate(-2px, 2px); transform: rotate(1deg);}
-    40% { text-shadow: 3px -3px cyan, -3px 3px greenyellow; transform: translate(2px, -2px); }
-    60% { text-shadow: -3px -3px tomato, 3px 3px fuchsia; transform: translate(-3px, 3px); }
-    80% { text-shadow: 4px 4px fuchsia, -4px -4px cyan; transform: translate(3px, -3px); transform: rotate(-1deg);}
-    100% { text-shadow: -2px 2px cyan, 2px -2px fuchsia; transform: translate(0, -2px); transform: rotate(-2deg);}
-  }
-  
-  .glitch {
+    0% {
+        text-shadow: 2px 2px greenyellow, -2px -2px tomato;
+        transform: translate(-5px, 0);
+        transform: rotate(2deg);
+    }
+
+    20% {
+        text-shadow: -2px 2px purple, 2px -2px cyan;
+        transform: translate(-2px, 2px);
+        transform: rotate(1deg);
+    }
+
+    40% {
+        text-shadow: 3px -3px cyan, -3px 3px greenyellow;
+        transform: translate(2px, -2px);
+    }
+
+    60% {
+        text-shadow: -3px -3px tomato, 3px 3px fuchsia;
+        transform: translate(-3px, 3px);
+    }
+
+    80% {
+        text-shadow: 4px 4px fuchsia, -4px -4px cyan;
+        transform: translate(3px, -3px);
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        text-shadow: -2px 2px cyan, 2px -2px fuchsia;
+        transform: translate(0, -2px);
+        transform: rotate(-2deg);
+    }
+}
+
+.glitch {
     animation: glitch 0.6s infinite alternate;
     padding-left: 5px;
-  }
+}
 
 @media only screen and (max-width: 800px) {
     body {
